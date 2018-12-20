@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>OrgansFuture</title>
+    <link rel="stylesheet" type="text/css" href="style/contato.css"/>
+    <script src="javascript/form.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <main>
+        
+        <header>
+            <h1 id="titulo">OrgansFuture</h1>
+            <figure>
+                <img src="imagens/jlogo2.png" alt="logo_tipo"/> 
+            </figure>
+            <nav id="menu_p">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="empresa.html">Empresa</a></li>
+                    <li><a href="solucoes.html">Soluções</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <h1 id="form">Formulário de Contato</h1>
+        
+        <form>
+            
+            <fieldset id="usuario">
+                <legend>Identificação do usuário</legend>    
+                <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+                
+                <p><label for="cEndereco">Endereço:</label> <input type="text" name="tEndereco" id="cEndereco" size="30" maxlength="50" placeholder="Endereço completo"></p>
+                
+                <p><label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="20" maxlength="30" placeholder="Email"/></p>
+                
+                <p><label for="cCel">Telefone:</label> <input type="text" name="tCel" id="cCel" size="20" maxlength="15" placeholder="Telefone"/></p>    
+                <p>Data de nascimento: <input type="date" name="tDate" id="cDate"/></p>
+            </fieldset>
+            
+            <fieldset id="mensagem">
+                <legend>Mensagem</legend>
+                <p><label for="cUrg">Grau de Emergência:</label> Mín<input type="range" name="tUrg" id="cUrg"/> Máx</p> 
+                <p><label for="cMesg">Mensagem:</label> <textarea name="tMesg" id="cMesg" cols="45" rows="5" placeholder="Deixe sua mensagem aqui"></textarea></p>
+            </fieldset>
+            
+            <input type="image" name="tEnviar" src="imagens/enviar.png" width="150px" onclick="nome_User()"/>
+            
+        </form>
+        
+    </main>
+    
+    <div id="footer">
+        <h2>&copy; Todos direitos reservados a OrgansFuture</h2>
+        <p><a href="#facebook"><img src="imagens/face.png"></a>  <a href="#twitter"><img src="imagens/twitter.png"></a></p>
+    </div>
+</body>
+
+</html>
